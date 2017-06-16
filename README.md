@@ -3,6 +3,22 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
+## Covariance Matrix
+
+R_laser_ << 0.0225, 0, 
+			0, 0.0225;
+
+R_radar_ << 0.09, 0, 0,
+              0, 0.0009, 0,
+              0, 0, 0.09;
+
+## Model Accuracy
+
+The algorithm gives as outputs [0.07, 0.06, 0.53, 0.54] for px, py, vx and vy RMSE which are less than or equals to the values [0.07, 0.07, 0.60, 0.60] when executed with the input file "sample-laser-radar-measurement-data-1.txt"
+
+The algorithm gives as outputs [0.18, 0.19, 0.50, 0.81] for px, py, vx and vy RMSE which are less than or equal to the values [0.20, 0.20, 0.50, 0.83] when executed with the input file "sample-laser-radar-measurement-data-2.txt"
+
+
 ## Dependencies
 
 * cmake >= 3.5

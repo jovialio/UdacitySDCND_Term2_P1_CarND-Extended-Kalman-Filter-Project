@@ -88,6 +88,12 @@ int main(int argc, char* argv[]) {
       float y;
       iss >> x;
       iss >> y;
+        
+      //ignore value if measurement is 0 in both x and y direction
+      if(x == 0 && y == 0){
+        continue;
+      }
+
       meas_package.raw_measurements_ << x, y;
       iss >> timestamp;
       meas_package.timestamp_ = timestamp;
@@ -104,6 +110,12 @@ int main(int argc, char* argv[]) {
       iss >> ro;
       iss >> theta;
       iss >> ro_dot;
+        
+      //ignore value if measurement is 0 for ro, theta and ro_dot
+      if(ro == 0 && theta == 0 && ro_dot == 0){
+        continue;
+      }
+      
       meas_package.raw_measurements_ << ro, theta, ro_dot;
       iss >> timestamp;
       meas_package.timestamp_ = timestamp;
