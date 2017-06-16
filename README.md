@@ -3,7 +3,17 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
-## Covariance Matrix
+## Sensor Noise Matrix
+
+Laser measurement noise standard deviation position1(x) = 0.15m.
+
+Laser measurement noise standard deviation position2(y) = 0.15m.
+
+Radar measurement noise standard deviation radius = 0.3m.
+
+Radar measurement noise standard deviation angle = 0.03rad.
+
+Radar measurement noise standard deviation radius change = 0.3m/s.
 
 R_laser_ << 0.0225, 0, 
 			0, 0.0225;
